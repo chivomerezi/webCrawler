@@ -1,0 +1,46 @@
+
+
+
+CREATE DATABASE bd2;
+
+
+CREATE TABLE bd2.palabras_x_cantidad (
+	palabra TEXT NULL,
+	cantidad INT NULL
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_general_ci;
+
+
+
+CREATE TABLE bd2.cantidad_x_palabra_x_sitio (
+	sitio TEXT NULL,
+	palabra TEXT NULL,
+	cantidad INT NULL
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_general_ci;
+
+
+
+CREATE TABLE bd2.palabra_x_sitio_x_tag (
+	sitio TEXT NULL,
+	palabra TEXT NULL,
+	tag TEXT NULL
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_general_ci;
+
+
+
+CREATE TABLE bd2.palabra_x_sitio (
+	palabra TEXT NULL,
+	sitio TEXT NULL
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_general_ci;
+
